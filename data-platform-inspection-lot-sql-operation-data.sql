@@ -1,8 +1,8 @@
 CREATE TABLE `data_platform_inspection_lot_operation_data`
 (
 	`InspectionLot`                             int(16) NOT NULL,
-    `Operations`                                int(4) NOT NULL,
-    `OperationsItem`                            int(4) NOT NULL,
+    `Operations`                                int(16) NOT NULL,
+    `OperationsItem`                            int(6) NOT NULL,
     `OperationID`                               int(4) NOT NULL,
     `Inspection`                                int(6) NOT NULL,
     `OperationType`                             varchar(4) NOT NULL,

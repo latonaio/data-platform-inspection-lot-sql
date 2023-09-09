@@ -14,9 +14,10 @@ data-platform-inspection-lot-sql には、sqlの設定ファイルとして、�
 * data-platform-inspection-lot-sql-header-doc-data.sql（データ連携基盤 品質検査ロット - ヘッダ文書データ）
 * data-platform-inspection-lot-sql-spec-general-data.sql（データ連携基盤 品質検査ロット - スペック一般データ）
 * data-platform-inspection-lot-sql-spec-detail-data.sql（データ連携基盤 品質検査ロット - スペック詳細データ）
-* data-platform-inspection-lot-sql-component-composition-data.sql（データ連携基盤 品質検査ロット - 構成品目構成物質データ）
+* data-platform-inspection-lot-sql-component-composition-data.sql（データ連携基盤 品質検査ロット - 構成物質データ）
 * data-platform-inspection-lot-sql-inspection-data.sql（データ連携基盤 品質検査ロット - 品質検査データ）
 * data-platform-inspection-lot-sql-operation-data.sql（データ連携基盤 品質検査ロット - 作業データ）
+* data-platform-inspection-lot-sql-operation-doc-data.sql（データ連携基盤 品質検査ロット - 作業文書データ）
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 

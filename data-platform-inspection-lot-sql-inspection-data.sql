@@ -11,6 +11,7 @@ CREATE TABLE `data_platform_inspection_lot_inspection_data`
     `InspectionLotInspectionText`	           varchar(200) DEFAULT NULL,
 	`CreationDate`                             date NOT NULL,
 	`LastChangeDate`                           date NOT NULL,
+	`IsCancelled`		                       tinyint(1) DEFAULT NULL,
 	`IsMarkedForDeletion`                      tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`InspectionLot`, `Inspection`),
