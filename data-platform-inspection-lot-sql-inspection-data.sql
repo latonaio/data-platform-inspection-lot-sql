@@ -2,6 +2,7 @@ CREATE TABLE `data_platform_inspection_lot_inspection_data`
 (
 	`InspectionLot`                            int(16) NOT NULL,
 	`Inspection`                               int(6) NOT NULL,
+	`InspectionDate`                           date NOT NULL,    
     `InspectionType`                           varchar(100) NOT NULL,
     `InspectionTypeValueUnit`                  varchar(3) DEFAULT NULL,
     `InspectionTypePlannedValue`               float(15) DEFAULT NULL,
@@ -9,10 +10,14 @@ CREATE TABLE `data_platform_inspection_lot_inspection_data`
     `InspectionTypeCertificateValueInText`     varchar(20) DEFAULT NULL,
     `InspectionTypeCertificateValueInQuantity` float(15) DEFAULT NULL,
     `InspectionLotInspectionText`	           varchar(200) DEFAULT NULL,
-	`CreationDate`                             date NOT NULL,
+	`CreationDate`              	           date NOT NULL,
+	`CreationTime`                             time NOT NULL,
 	`LastChangeDate`                           date NOT NULL,
-	`IsCancelled`		                       tinyint(1) DEFAULT NULL,
-	`IsMarkedForDeletion`                      tinyint(1) DEFAULT NULL,
+	`LastChangeTime`                           time NOT NULL,
+    `IsReleased`                               tinyint(1) DEFAULT NULL,
+    `IsLocked`                                 tinyint(1) DEFAULT NULL,
+    `IsCancelled`                              tinyint(1) DEFAULT NULL,
+    `IsMarkedForDeletion`                      tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`InspectionLot`, `Inspection`),
 

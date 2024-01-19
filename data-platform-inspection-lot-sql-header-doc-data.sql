@@ -11,9 +11,9 @@ CREATE TABLE `data_platform_inspection_lot_header_doc_data`
   
     PRIMARY KEY (`InspectionLot`, `DocType`, `DocVersionID`, `DocID`),
     
-    CONSTRAINT `DataPlatformInspectionLotHeaderDocData_fk` FOREIGN KEY (`InspectionLot`) REFERENCES `data_platform_inspection_lot_header_data` (`InspectionLot`),
-    CONSTRAINT `DataPlatformInspectionLotHeaderDocDataDocType_fk` FOREIGN KEY (`DocType`) REFERENCES `data_platform_doc_type_doc_type_data` (`DocType`),
-    CONSTRAINT `DataPlatformInspectionLotHeaderDocDataDocIssuerBusinessPartner_fk` FOREIGN KEY (`DocIssuerBusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
+    CONSTRAINT `DPFMInspectionLotHeaderDocData_fk` FOREIGN KEY (`InspectionLot`) REFERENCES `data_platform_inspection_lot_header_data` (`InspectionLot`),
+    CONSTRAINT `DPFMInspectionLotHeaderDocDataDocType_fk` FOREIGN KEY (`DocType`) REFERENCES `data_platform_doc_type_doc_type_data` (`DocType`),
+    CONSTRAINT `DPFMInspectionLotHeaderDocDataDocIssuerBusinessPartner_fk` FOREIGN KEY (`DocIssuerBusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

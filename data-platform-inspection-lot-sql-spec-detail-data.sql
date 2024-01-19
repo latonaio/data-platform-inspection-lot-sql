@@ -1,14 +1,19 @@
 CREATE TABLE `data_platform_inspection_lot_spec_detail_data`
 (
 	`InspectionLot`                        int(16) NOT NULL,
-    `SpecType`                             varchar(6) NOT NULL,
+    `SpecType`                             varchar(100) NOT NULL,
     `UpperLimitValue`                      float(10) NOT NULL,
     `LowerLimitValue`                      float(10) NOT NULL,
     `StandardValue`                        float(10) NOT NULL,
     `SpecTypeUnit`                         varchar(3) NOT NULL,
-    `CreationDate`                         date NOT NULL,
-    `LastChangeDate`                       date NOT NULL,
-	`IsCancelled`		                   tinyint(1) DEFAULT NULL,
+    `Formula`                              varchar(1000) DEFAULT NULL,
+	`CreationDate`              	       date NOT NULL,
+	`CreationTime`                         time NOT NULL,
+	`LastChangeDate`                       date NOT NULL,
+	`LastChangeTime`                       time NOT NULL,
+    `IsReleased`                           tinyint(1) DEFAULT NULL,
+    `IsLocked`                             tinyint(1) DEFAULT NULL,
+    `IsCancelled`                          tinyint(1) DEFAULT NULL,
     `IsMarkedForDeletion`                  tinyint(1) DEFAULT NULL,
 
     PRIMARY KEY (`InspectionLot`, `SpecType`),
